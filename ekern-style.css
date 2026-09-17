@@ -1,0 +1,156 @@
+/* ==============================
+   Ekern cykelverkstad
+   Byggd för DATOR (desktop-first).
+   Media queries läggs längst ner.
+   ============================== */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1f2a24;
+  background: #f7f7f2;
+}
+
+h1, h2, h3 { font-family: Arial, Helvetica, sans-serif; line-height: 1.2; }
+a { color: #1f5a3d; }
+
+.behallare {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.knapp {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #1f5a3d;
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* ---------- Sidhuvud ---------- */
+.sidhuvud { background: #1f2a24; }
+
+.sidhuvud-inre {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  height: 72px;
+}
+
+.logo {
+  color: #f2c14e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.huvudmeny { display: flex; gap: 24px; }
+
+.huvudmeny a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+}
+
+.sok { display: flex; margin-left: auto; }
+.sok input { width: 220px; padding: 8px; border: 0; }
+.sok button { padding: 8px 14px; border: 0; background: #f2c14e; font-weight: bold; }
+
+/* ---------- Hero ---------- */
+.hero { background: #e3ebe3; padding: 60px 0; }
+
+.hero-inre {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.hero-text h1 { font-size: 46px; margin-top: 0; }
+
+.hero-bild {
+  flex-shrink: 0;
+  width: 480px;
+  height: 320px;
+  background: #9fb8a4;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+/* ---------- Sidlayout ---------- */
+.sida {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 40px;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.sidomeny {
+  background: #fff;
+  padding: 20px;
+  align-self: start;
+}
+
+.sidomeny h2 { margin-top: 0; font-size: 20px; }
+.sidomeny ul { list-style: none; margin: 0; padding: 0; }
+.sidomeny li { padding: 6px 0; border-bottom: 1px solid #e0e0d8; }
+
+/* ---------- Kort ---------- */
+.kortrad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.kort { background: #fff; padding: 16px; }
+.kort h3 { margin-bottom: 4px; }
+.kort p { margin-top: 0; }
+
+.kort-bild {
+  height: 140px;
+  background: #cfdccf;
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+
+/* ---------- Erbjudande ---------- */
+.erbjudande {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  margin-top: 40px;
+  padding: 28px;
+  background: #f2c14e;
+}
+
+.erbjudande h2 { margin: 0; }
+.erbjudande p { margin-bottom: 0; }
+.erbjudande .knapp { white-space: nowrap; }
+
+/* ---------- Sidfot ---------- */
+.sidfot { background: #1f2a24; color: #dfe6df; padding: 40px 0; }
+
+.sidfot-inre {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidfot h3 { color: #f2c14e; margin-top: 0; }
+
+/* ==============================
+   MEDIA QUERIES
+   Skriv dina media queries här nedanför.
+   ============================== */
